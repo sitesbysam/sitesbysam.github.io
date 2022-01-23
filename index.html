@@ -13,7 +13,7 @@
     <!-- Header text-->
     <div class="header-text">
         <h1>sitesbysam</h1>
-        <!-- <h3>A simple collection of links for various - mostly FOSS (Free and Open Source Software) - Windows programs.</h3> -->
+        <h3>hi there. i make websites for people. see below and reach out if you're interested in getting your own website or email address at <i>whateveryouwant</i>.com</h3>
     </div>
 
     <!-- Links-->
@@ -41,8 +41,21 @@
     <a href="w10setup.html" class="links">/w10setup</a>
     <p>Collection of windows utilities</p>
 
+    <div class="icons">
+        <a href="https://instagram.sitesbysam.dev">
+            <img src="assets/instagram.png">
+            <h6>@sitesbysam.dev</h6>
+        </a>
+    </div>
+
+    
+    <div class="bottom-text">
+        For business inquiries, please contact<br>
+        <a class="email" href="mailto:contact@sitesbysam.dev">contact@sitesbysam.dev</a>
+    </div>
+
     <div class="footer">
-        <h6>Copyright 2022 sitesbysam</h6>
+        <p>Copyright 2022 sitesbysam</p>
     </div>
  
 </body>
@@ -53,16 +66,21 @@
         font-style: normal;
         font-weight: normal;
         src: local('body'), url('assets/Fonts/entsani.woff') format('woff');
+    } */
+    @font-face {
+        font-family: 'dpcomic';
+        src: url(assets/fonts/dpcomic/dpcomic.ttf);
     }
     @font-face {
-        font-family: 'links';
-        src: url(assets/Fonts/FredokaOne-Regular.ttf);
-    } */
+        font-family: 'yoster';
+        src: url(assets/fonts/yoster-island/yoster.ttf);
+    }
 
     body {
         background: rgb(0, 0, 0);
+        /* background-image: url('assets/background.png'); */
         color: #fff;
-        font-family: 'monospace';
+        font-family: 'dpcomic';
         text-align: center;
         letter-spacing: 2px;
     }
@@ -85,7 +103,6 @@
     }
 
     p {
-        font-family: monospace;
         font-size: 14px;
         padding-bottom: 20px;
     }
@@ -105,28 +122,18 @@
         line-height: 150%;
         font-weight: bold;
         font-size: 30px;
-    }
-
-    .login {
-        line-height: 250%;
-        font-size: 20px;
-        text-decoration: none;
-        color: gray;
-        transition: color 200ms; 
-    }
-    .login:hover {
-        color: rgb(255, 255, 255);
+        font-family: 'yoster';
     }
 
     .links {
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bolder;
         margin-top: 18px;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid rgb(78, 78, 78);
         border-width: 2px;
-        width: 290px;
+        max-width: 300px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -134,25 +141,39 @@
         transition: color 1s; 
         text-decoration: none;
         background: rgba(96, 173, 89, 0);
+        font-family: monospace;
     }
 
     .socials {
         text-align: center;
         font-size: 20px;
         color: rgb(170, 170, 170);
-        transition: color 200ms; 
+        transition: 200ms; 
         text-decoration: none;
     }
 
     .links:hover {
         color: rgb(255, 255, 255);
         background: rgba(0, 0, 0, 0);
+        border: solid 2px #fff;
         /* background: rgb(96,173,89); */
         /* background: radial-gradient(circle, rgba(96,173,89,1) 4%, rgba(61, 116, 56, 0.824) 69%, rgba(96,173,89,0.22460322019432777) 75%, rgba(96,173,89,0) 88%);  */
     }
 
-    .socials:hover {
-        color: rgb(255, 255, 255);
+    .icons {
+        display: flex;
+        align-self: center;
+    } .icons a {
+        text-decoration: none;
+        font-size: 24px;
+        display: flex;
+        color: rgb(96, 173, 89);
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        max-width: 100px;
+    } .icons a:hover {
+        color: #fff;
     }
 
     .bottom-text {
@@ -160,12 +181,12 @@
         padding-bottom: 20px;
         text-align: center;
         margin-top: 40px;
+        line-height: 30px;
         /* font-weight: bold; */
     }
 
     p.bottom-text {
         font-size: 14px;
-
     }
 
     .email {
