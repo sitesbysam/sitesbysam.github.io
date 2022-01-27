@@ -17,17 +17,14 @@
     </div>
 
     <!-- Links-->
-    <h2>East Coast Monsters</h2>
-    <a href="https://eastcoastmonsters.com" class="links">eastcoastmonsters.com</a>
-    <p>Hip-hop collaborative</p>
 
     <h2>Andrew Cornish</h2>
     <a href="https://andrewcornish.me" class="links">andrewcornish.me</a>
     <p>Jazz musician</p>
-    
-    <h2>True Fact</h2>
-    <a href="https://truefact.me" class="links">truefact.me</a>
-    <p>Hip-hop artist</p>
+
+    <h2>East Coast Monsters</h2>
+    <a href="https://eastcoastmonsters.com" class="links">eastcoastmonsters.com</a>
+    <p>Hip-hop collaborative</p>
 
     <h2>starfishdeathsquad</h2>
     <a href="https://starfishdeathsquad.com" class="links">starfishdeathsquad.com</a>
@@ -38,16 +35,12 @@
     <p>Regional video game scene</p>
 
     <h2>W10Setup</h2>
-    <a href="w10setup.html" class="links">/w10setup</a>
+    <a href="w10setup/index.html" class="links">/w10setup</a>
     <p>Collection of windows utilities</p>
 
-    <div class="icons">
-        <a href="https://instagram.sitesbysam.dev">
-            <img src="assets/instagram.png">
-            <h6>@sitesbysam.dev</h6>
-        </a>
-    </div>
-
+    <!-- <div class="icons"> -->
+        <a class="icons" id="instagram-link" href="https://instagram.sitesbysam.dev"><img id="instagram-img" src="assets/instagram-grayscale.png"></a>
+    <!-- </div> -->
     
     <div class="bottom-text">
         For business inquiries, please contact<br>
@@ -62,10 +55,10 @@
 
 <style>
     /* @font-face {
-        font-family: 'body';
+        font-family: 'dpcomic';
         font-style: normal;
         font-weight: normal;
-        src: local('body'), url('assets/Fonts/entsani.woff') format('woff');
+        src: local('dpcomic'), url('assets/Fonts/dpcomic/dpcomic.ttf') format('ttf');
     } */
     @font-face {
         font-family: 'dpcomic';
@@ -160,20 +153,26 @@
         /* background: radial-gradient(circle, rgba(96,173,89,1) 4%, rgba(61, 116, 56, 0.824) 69%, rgba(96,173,89,0.22460322019432777) 75%, rgba(96,173,89,0) 88%);  */
     }
 
+
     .icons {
-        display: flex;
-        align-self: center;
-    } .icons a {
-        text-decoration: none;
-        font-size: 24px;
-        display: flex;
-        color: rgb(96, 173, 89);
+        display: block;
+        border: 1px solid white;
         margin-left: auto;
         margin-right: auto;
-        align-items: center;
-        max-width: 100px;
-    } .icons a:hover {
-        color: #fff;
+    }
+
+    #instagram-link {
+        display: block;
+        max-width: 75px;
+        max-height: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(assets/background-blurred.jpg);
+        border-radius: 10px;
+    } #instagram-img {
+        display: block;
+        max-width: 75px;
+        max-height: 75px;
     }
 
     .bottom-text {
@@ -194,6 +193,8 @@
         font-size: 20px;
         color: rgb(96, 173, 89);
         transition: color 200ms; 
+    } .email:hover {
+        color: #fff;
     }
 
     .footer {
