@@ -8,7 +8,7 @@
 <body>
     
     <!-- Profile picture-->
-    <!-- <img src="assets/logo.png" alt="profile picture" class="logo"> -->
+    <img src="assets/logo.png" alt="logo" class="logo">
 
     <!-- Header text-->
     <div class="header-text">
@@ -66,14 +66,14 @@
     }
     @font-face {
         font-family: 'yoster';
-        src: url(assets/fonts/yoster-island/yoster.ttf);
+        src: local('yoster'), url(assets/fonts/yoster-island/yoster.ttf) format('woff');
     }
 
     body {
         background: rgb(0, 0, 0);
         /* background-image: url('assets/background.png'); */
         color: #fff;
-        font-family: 'dpcomic';
+        font-family: monospace;
         text-align: center;
         letter-spacing: 2px;
     }
@@ -90,9 +90,7 @@
 
     h3 {
         font-family: monospace;
-        font-size: 20px;
-        margin-left: 20%;
-        margin-right: 20%;
+        font-size: 18px;
     }
 
     p {
@@ -156,7 +154,7 @@
 
     .icons {
         display: block;
-        border: 1px solid white;
+        /* border: 1px solid white; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -167,8 +165,8 @@
         max-height: 75px;
         margin-left: auto;
         margin-right: auto;
-        background-image: url(assets/background-blurred.jpg);
-        border-radius: 10px;
+        /* background-image: url(assets/background-blurred.jpg); */
+        /* border-radius: 10px; */
     } #instagram-img {
         display: block;
         max-width: 75px;
